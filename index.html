@@ -6,12 +6,12 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <div class="topnav">
 
-    <button id="addcolumn" type="button" name="button">Add column</button>
-    <button id="removecolumn" type="button" name="button">Remove column</button>
-    <button id="addrow" type="button" name="button">Add row</button>
-    <button id="removerow" type="button" name="button">Remove row</button>
-    <button id="fillall" type="button" name="button">Fill all</button>
-    <button id="fillalluncolored" type="button" name="button">Fill All Uncolored</button>
+<button id="addcolumn" input type="button" name="button" onclick="addColumn()">Add column</button>
+<button id="removecolumn" type="button" name="button">Remove column</button>
+<button id="addrow" input type="button" name="button" onclick="addRow()">Add row</button>
+<button id="removerow" type="button" name="button">Remove row</button>
+<button id="fillall" type="button" name="button">Fill all</button>
+<button id="fillalluncolored" type="button" name="button">Fill All Uncolored</button>
     <select name="colors" id="colors">
         <option value="red">red</option>
         <option value="blue">blue</option>
@@ -21,10 +21,11 @@
     <button id="clearall" type="button" name="button">Clear all</button>
   </div>
 </head>
+
 <body>
 
-<h2>Table</h2>
-
+<h2>Table</h2> 
+<table> 
 <div class="row">
   <div class="column">
 
@@ -45,5 +46,8 @@
   </div>
   <div class="column">
 
+  </div>
+</div>
+</table>
 </body>
 </html>
