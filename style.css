@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30px;
+    height: 30px; 
+    background-color:white;
+    border: 1px solid black;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-color: coral;
+  }
