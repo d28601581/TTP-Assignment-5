@@ -1,8 +1,18 @@
-
 function addColumn(){
     let columnCount = document.querySelectorAll(".column").length;
     columnCount /= document.querySelectorAll(".row").length;
-    alert(columnCount)
+    let Rows = document.querySelectorAll(".row");
+
+    let template = `
+        <div class="column"></div>
+    `
+
+    for(let i = 0; i < Rows.length; i++){
+        Rows[i].innerHTML += template;
+    }
+    
+
+
 }
 
 function addRow(){
@@ -25,5 +35,4 @@ function addRow(){
         table.innerHTML += template2;
     }
     table.innerHTML += template3;
-
 }
