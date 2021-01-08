@@ -34,5 +34,7 @@ function addRow(){
     for(let i = 0; i < columnCount; i++){
         table.innerHTML += template2;
     }
+    
+    
     table.innerHTML += template3;
 }
