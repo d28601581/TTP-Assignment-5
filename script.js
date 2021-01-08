@@ -27,3 +27,10 @@ function addRow(){
     table.innerHTML += template3;
 
 }
+//var selectedColor = document.getElementById('colors')
+
+function fillColor(){
+  var selectedColor = document.getElementById('colors').value;
+  document.getElementsByClassName('column').style.background-color = red;
+}
+//var fillColor = document.getElementById('fillall')
