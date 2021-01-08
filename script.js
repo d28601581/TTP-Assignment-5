@@ -27,4 +27,18 @@ function addRow(){
     for(let i = 0; i < columnCount; i++){
         Rows[Rows.length - 1].innerHTML += template2;
     }
+    table.innerHTML += template3;
+}
+function fillAll(){
+  var selectedColor = document.getElementById('colors').value;
+  var columns = document.getElementsByClassName('column');
+  for(let i=0;columns.length;i++){
+    columns[i].style.backgroundColor = selectedColor;
+  }
+}
+function clearAll(){
+  var columns = document.getElementsByClassName('column');
+  for(let i=0;columns.length;i++){
+    columns[i].style.backgroundColor = "white";
+  }
 }
