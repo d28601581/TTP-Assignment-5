@@ -1,3 +1,20 @@
+function deleteRow(){
+    if(document.querySelectorAll(".row").length > 1){
+        document.querySelector(".row").remove();
+    }
+}
+
+function deleteColumn(){
+    let columnCount = document.querySelectorAll(".column").length;
+    columnCount /= document.querySelectorAll(".row").length;
+    let Rows = document.querySelectorAll(".row");
+    if(columnCount > 1){
+        for(let i = 0; i < Rows.length; i++){
+            Rows[i].getElementsByClassName("column")[0].remove();
+        }
+    }
+}
+
 function addColumn(){
     let columnCount = document.querySelectorAll(".column").length;
     columnCount /= document.querySelectorAll(".row").length;
