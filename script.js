@@ -10,7 +10,7 @@ function addColumn(){
     for(let i = 0; i < Rows.length; i++){
         Rows[i].innerHTML += template;
     }
-    
+
 
 
 }
@@ -35,4 +35,17 @@ function addRow(){
         table.innerHTML += template2;
     }
     table.innerHTML += template3;
+}
+function fillAll(){
+  var selectedColor = document.getElementById('colors').value;
+  var columns = document.getElementsByClassName('column');
+  for(let i=0;columns.length;i++){
+    columns[i].style.backgroundColor = selectedColor;
+  }
+}
+function clearAll(){
+  var columns = document.getElementsByClassName('column');
+  for(let i=0;columns.length;i++){
+    columns[i].style.backgroundColor = "white";
+  }
 }
